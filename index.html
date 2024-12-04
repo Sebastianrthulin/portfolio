@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sebastian Thulin | Frontend Web Developer</title>
+  <link rel="icon" type="image" href="images/websiteIcon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <!--Navbar Section-->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" id="navbar__logo">Sebastian Thulin</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    <ul class="navbar__menu">
+      <li class="navbar__item">
+        <a href="/" class="navbar__links">Home</a>
+      </li>
+      <li class="navbar__item">
+        <a onclick="location.href='#about'" class="navbar__links">About</a>
+      </li>
+      <li class="navbar__item">
+        <a href="/" class="navbar__links">Projects</a>
+      </li>
+      <li class="navbar__item">
+        <a onclick="location.href='#contact'" class="navbar__links">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </nav>
+  <!--Hero Section-->
+  <section>
+  <div class="main">
+    <div class="main__container">
+      <div class="main__content">
+        <h1>Hey, I'm Sebastian Thulin</h1>
+        <p>
+          A creative person who fell a victim for web development and is currently trying to learn everything about it 
+        </p>
+        <a class="hero__btn-projects" href="/">Projects</a>
+      </div>
+  </div>
+</div>
+</section>
+  <!--About Me Section-->
+<section id="about" class="section__about">
+    <div class="about-me__container">
+      <h1>
+        <span class="about-me__main-heading">ABOUT ME</span>
+        <span class="about-me__main-desc">Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</span>
+      </h1>
+      <div class="about-me__content">
+        <div class="about-me__content-main">
+        <h3 class="get-to-know-me"> Get to know me!</h3>
+        <div class="about-me__content-details">
+          <p class="about-me__content-details-para">
+            I'm a <strong>Frontend Focused Web Developer</strong> building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the <strong>Projects</strong>   section.
+          </p>
+        </div>
+        <a class="hero__btn-contact" onclick="location.href='#contact'">Contact</a>
+      </div>
+      <div class="about__content-skills">
+        <h3 class="my-skills-title">My Skills</h3>
+        <div class="skills">
+          <div class="skills-skill">HTML</div>
+          <div class="skills-skill">CSS</div>
+          <div class="skills-skill">JavaScript</div>
+          <div class="skills-skill">GIT</div>
+          <div class="skills-skill">Github</div>
+          <div class="skills-skill">SEO</div>
+          <div class="skills-skill">Terminal</div>
+        </div>
+        </div>
+      </div>
+    </div>
+</section>
+  <!--Contact Section-->
+  <section id="contact" class="section__contact">
+  <div class="contact__main">
+    <div class="contact__container">
+      <h1 class="contact__heading">Contact</h1>
+      <form action="https://formspree.io/f/manypeoz" method="POST">
+      <h3 class="contact__sub-heading">Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</h3>
+      <div class="contact__form-container">
+        <label class="contact__form-label" for="name">Name</label>
+        <input required placeholder="Enter your name" type="text" class="contact__form-input" name="name" id="name">
+      </div>
+      <div class="contact__form-container">
+        <label class="contact__form-label" for="email">E-mail</label>
+        <input required placeholder="Enter your e-mail" type="email" class="contact__form-input" name="email" id="email">
+      </div>
+      <div class="contact__form-container">
+        <label class="contact__form-label" for="name">Message</label>
+        <textarea required cols="30" rows="10" class="contact__form-input" placeholder="Enter your message" name="message" id="message"></textarea>
+      </div>
+      <button type="submit" class="contact__submit-btn">Submit</button>
+    </form>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="main__footer">
+    <div class="main__container-footer">
+      <div class="main__footer-upper">
+        <div class="main__footer-row-1">
+          <h2 class="main__footer-heading-socials">
+            <span>Social</span>
+          </h2>
+          <div class="main__footer-socials-links">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sebastian-thulin-rosenblad-3757aa2a8/">
+              <img class="main__footer-icon" src="./images/svg4.png" alt="Sebastian's Linkedin Profile">
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/Sebastianrthulin">
+              <img class="main__footer-icon" src="./images/svg5.png" alt="Sebastian's GitHub Profile">
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://x.com/SebastianTHLN">
+              <img class="main__footer-icon" src="./images/svg6.png" alt="Sebastian's X Profile">
+            </a>
+          </div>
+        </div>
+        <div class="main__footer-row-2">
+          <h2 class="main__footer-name">Sebastian Thulin</h2>
+        <p class="main__footer-short-desc">
+          I'm a frontend focused web developer building the frontend of websites that leads to the success of the overall product
+          </p>
+        </div>
+      </div>
+      <div class="main__footer-lower">
+        @ Copyright
+        <script>document.write(new Date().getFullYear())</script>
+        Made By
+        <a href="/">Sebastian Thulin</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="app.js"></script>
+</body>
+</html>
